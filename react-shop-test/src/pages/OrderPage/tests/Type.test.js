@@ -17,7 +17,7 @@ test('display product images from server', async () => {
 
 test('서버에서 데이터를 받을 때 에러가 나는 경우', async () => {
   server.resetHandlers(
-    rest.get('http://localhost:5000/products', (req, res, ctx) => {
+    rest.get('http://localhost:7001/products', (req, res, ctx) => {
       return res(ctx.status(500));
     })
   );
