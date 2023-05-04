@@ -9,7 +9,6 @@ function Type({ orderType }) {
   const [items, setItems] = useState([]);
   const [error, setError] = useState(false);
   const [orderDatas, updateItemCount] = useContext(OrderContext);
-  console.log(orderDatas.totals[orderType]);
 
   useEffect(() => {
     loadItems(orderType);
